@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import UserInput from './UserInput/UserInput';
+import UserOutput from './UserOutput/UserOutput';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+
+  state = {
+    users:[
+      {id: '1', username: "username1"},
+      {id: '2', username: "username2"},
+      {id: '3', username: "username3"},
+    ],
+    otherUser: 'other username'
+  }
+
+  switchUsernameHandler = (newUsername) => {
+    this.setState()
+  }
+  
+
+  
 }
 
 export default App;
